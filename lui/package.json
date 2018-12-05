@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@magicleap/prismatic": "^0.17.4",
+    "@magicleap/prismatic": "^0.17.5",
     "@material-ui/core": "^1.4.0",
     "axios": "^0.18.0",
     "glamor": "^2.20.40",
@@ -16,7 +16,7 @@
     "react-dom": "^16.3.2",
     "react-responsive-carousel": "^3.1.41",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^2.0.5",
     "react-swipeable-views": "^0.12.15",
     "react-three-fbx-viewer": "^1.0.0",
     "react-three-renderer": "^3.2.4",
