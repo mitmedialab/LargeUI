@@ -105,6 +105,10 @@ class PrismaticApp extends Component {
       super(props);
   }
 
+  // handleRotate = (rotate_direction) => {
+  //     ballon.setAttribute('rotate-by-angles', 'angles: 0 1.6 0; duration: 1s; track: 1');
+  // }
+
   render() {
       const { classes } = this.props
 

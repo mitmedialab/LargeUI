@@ -44,6 +44,8 @@ class Leap extends React.Component {
         this.timer = setInterval(() => {
 
             if (this.state.hand) {
+
+                
                 // const palmVelocity = this.state.hand.palmVelocity[0];
                 // if (palmVelocity < -400) {
                 //     this.props.handleSwipe("left");
@@ -51,26 +53,27 @@ class Leap extends React.Component {
                 //     this.props.handleSwipe("right");
                 // }
 
-                const hovered = this.checkHover();
-                if (hovered) {
-                    // console.log("HOVERING", hovered);
-                    this.setState({ hovered });
-                }
+                // const hovered = this.checkHover();
+                // if (hovered) {
+                //     // console.log("HOVERING", hovered);
+                //     this.setState({ hovered });
+                // }
+                //
+                // // clicking
+                // if (this.state.indexFinger.vel < -350 && this.state.hovered) {
+                //     console.log("CLICKED", this.state.hovered);
+                //     this.setState({ clicked: this.state.hovered })
+                //     this.props.handleClick(this.state.hovered);
+                // }
+                //
+                // if (this.state.pinch > 0.7 && this.state.hand.pinchStrength < 0.3) {
+                //     this.props.handleExit();
+                // } else {
+                //     this.setState({ pinch: this.state.hand.pinchStrength })
+                // }
+                //
+                // this.props.handleHover(hovered);
 
-                // clicking
-                if (this.state.indexFinger.vel < -350 && this.state.hovered) {
-                    console.log("CLICKED", this.state.hovered);
-                    this.setState({ clicked: this.state.hovered })
-                    this.props.handleClick(this.state.hovered);
-                }
-
-                if (this.state.pinch > 0.7 && this.state.hand.pinchStrength < 0.3) {
-                    this.props.handleExit();
-                } else {
-                    this.setState({ pinch: this.state.hand.pinchStrength })
-                }
-
-                this.props.handleHover(hovered);
             }
         }, 100);
     }
